@@ -1,18 +1,16 @@
 {
-    "name": "make code tutorial template",
+    "name": "SG Values Week",
     "version": "0.0.1",
     "description": "",
     "dependencies": {
         "device": "*"
     },
     "files": [
-        "README.md",
         "custom.ts",
         "sg-values-week.md"
     ],
     "testFiles": [
     ],
-    "public": true,
     "supportedTargets": [
         "arcade"
     ],
