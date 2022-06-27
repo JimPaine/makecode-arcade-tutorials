@@ -83,7 +83,9 @@ Click on ``||events:Events||``
 
 Then drag ``||events: every (5) seconds||`` to an empty space on the screen.
 
-**Don't** change the value just yet, we will look at this later!
+What happens if you change the number?
+
+Could this help make it harder or easier? Or even impossible!
 
 ```blocks
 events.everyNSeconds(5, function () {
