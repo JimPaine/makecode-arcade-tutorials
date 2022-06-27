@@ -1,6 +1,6 @@
 {
-    "name": "SG Values Week",
-    "version": "0.0.1",
+    "name": "KS1 Tutorials",
+    "version": "0.0.2",
     "description": "",
     "dependencies": {
         "device": "*"

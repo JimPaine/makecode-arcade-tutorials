@@ -210,7 +210,6 @@ And move ``||music:play melody () at tempo 120 (bpm)||`` into the new loop
 Try changing the values and see what happens?
 
 ```blocks
-music
 forever(function () {
     music.playMelody("- - - - - - - - ", 120)
 })
