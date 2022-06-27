@@ -161,3 +161,24 @@ events.whenPlayerCatchesItem(MovingItemType.Bad, function () {
 	info.changeLifeBy(-1)
 })
 ```
+
+## How about some music?
+
+Start by clicking on ``||loops:Loops||``
+
+Then drag ``||loops:forever||``
+
+What might this do?
+
+Now click on ``||music:Music||``
+
+And move ``||music:play melody () at tempo 120 (bpm)||`` into the new loop
+
+Try changing the values and see what happens?
+
+```blocks
+music
+forever(function () {
+    music.playMelody("- - - - - - - - ", 120)
+})
+```
