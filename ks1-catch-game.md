@@ -70,7 +70,7 @@ Then click **Gallery** again and change the picture if you want to.
 scene.setBackgroundImage(img``)
 characters.createPlayer(img``)
 ```
-### Controlling our player
+## Controlling our player
 
 To make our player move we need to add the code that controls the player.
 
