@@ -182,3 +182,23 @@ forever(function () {
     music.playMelody("- - - - - - - - ", 120)
 })
 ```
+
+## Lets add some sound effects
+
+Now lets add some sound effects when our player catches an item.
+
+Click on ``||music:Music||``
+
+And move ``||music:play melody () at tempo 120 (bpm)||`` into ``||events:when player catches Nice item||``
+
+Try making your own melody to make a happy sound.
+
+No do the same for when you catch a bad item.
+
+## Congratulations
+
+You have built your very own game!
+
+Click **Done** and go through the steps to save your game for later!
+
+You will now have access to all of the coding options, have an explore and see what else you can do!
