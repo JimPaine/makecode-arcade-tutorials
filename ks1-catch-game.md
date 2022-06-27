@@ -1,6 +1,6 @@
-# SG Values Week
+# Gaming Making for KS1
 
-## Welcome to Spring Grove Values week! @showdialog
+## Game making with Microsoft MakeCode @showdialog
 
 We are going to be building a computer game! So lets be:
 
@@ -12,19 +12,35 @@ We are going to be building a computer game! So lets be:
 
 So lets get coding
 
+Check the **hints** by clicking on the bulb at the bottom!
+
 ## What is coding
 
 There are lots of different ways to code, but the two things we will use to make our game today are **events** and **handlers**
 
+**Discussion**
+
+What are these?
+
+Talk them through with your teacher.
+
 ## On start
 
-Our first event ``||loops:On Start||`` is an **event** that happens when our game starts
+Our first event ``||loops:On Start||`` which happens when our game starts.
+
+**Discussion**
+
+What might we want to do when the game starts?
 
 ## The first thing to handle!
 
-The look and feel of our game
+Setting up our game.
 
-### Adding a background
+- Creating our level
+- Adding a player
+- Adding controls
+
+## Adding a background
 
 Select ``||scene:Scene||``
 
@@ -38,15 +54,13 @@ Click **Gallery** and pick a picture, even take a few minutes to change it!
 scene.setBackgroundImage(img``)
 ```
 
-## Lots more things to handle!
+## Adding our player
 
 Select ``||characters:Characters||``
 
-Then ``||characters: create player []``
+Then ``||characters: create player []||``
 
 And move it under the ``||scene:set background image to []||``
-
-Check the **hints** at the bottom by clicking on the bulb!
 
 Click on the grey box
 
@@ -56,10 +70,7 @@ Then click **Gallery** again and change the picture if you want to.
 scene.setBackgroundImage(img``)
 characters.createPlayer(img``)
 ```
-
-## Wait nothing happens!
-
-### Making our player move
+### Controlling our player
 
 To make our player move we need to add the code that controls the player.
 
@@ -73,15 +84,25 @@ characters.createPlayer(img``)
 controller.movePlayer()
 ```
 
-## Is this fun?
+## Lets play!
 
-Now lets add some game play to our game.
+Click on the game console icon on the top left and try your game out!
+
+**Discussion**
+
+Is this fun?
+
+What else does it need?
+
+## Now lets add some game play.
 
 Lets start by adding another **event**
 
 Click on ``||events:Events||``
 
 Then drag ``||events: every (5) seconds||`` to an empty space on the screen.
+
+**Discussion**
 
 What happens if you change the number?
 
@@ -95,23 +116,29 @@ events.everyNSeconds(5, function () {
 
 ## Lets play catch
 
-### Nice
-
 Click ``||characters:Characters||``
 
 Then drag ``||characters: create [] which is Nice||`` inside our latest event.
 
 Click on the grey square and pick something to be your item to catch, maybe something to eat.
 
-### Not nice
+**Discussion**
 
-Click ``||characters:Characters||``
+What happens if you change the number of seconds?
 
-Then drag ``||characters: create [] which is Nice||`` under our previous step.
+Could this help make it harder or easier? Or even impossible!
 
-Now change **Nice** to **Bad**
+## Lets make it a little harder
+
+Lets add another character to our event, but this time make it bad.
 
 This will be an item we won't want to catch!
+
+**Discussion**
+
+What might happen when we catch this item?
+
+Remember to check the hints if you are unsure about your code.
 
 ```blocks
 events.everyNSeconds(5, function () {
@@ -120,7 +147,7 @@ events.everyNSeconds(5, function () {
 })
 ```
 
-## How about some points?
+## Scoring points
 
 Time for another **event**!
 
@@ -129,6 +156,12 @@ This time we want to do something when our player catches a nice item.
 Click ``||events:Events||``
 
 Then drag ``||events: when player catches Nice item||``
+
+**Discussion**
+
+When is this event happening?
+
+Can you explain when it would happen?
 
 ```blocks
 events.whenPlayerCatchesItem(MovingItemType.Nice, function () {
@@ -202,3 +235,18 @@ You have built your very own game!
 Click **Done** and go through the steps to save your game for later!
 
 You will now have access to all of the coding options, have an explore and see what else you can do!
+
+**Discussion**
+
+What did you learn?
+
+- What is an event?
+- What is a handler?
+
+Where you
+- Curious
+- Confident
+- Creative
+- Caring
+- A good craftsman
+
