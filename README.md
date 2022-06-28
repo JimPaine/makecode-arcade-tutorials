@@ -14,6 +14,12 @@ A simple game which allows the developer to create a game where a player can mov
 - Events
 - Handling of events
 
+### This vs Existing
+
+![ks1 catch game](docs/images/ks1-catch-game.png)
+
+![original catch game](docs/images/original-catch-game.png)
+
 ### Simplifications made
 
 - Removes terminology like: sprite and projectile and replaces them with player and item
@@ -25,12 +31,3 @@ A simple game which allows the developer to create a game where a player can mov
 - "otherSprite" being destroyed is also handled by the event.
 - Timing event simplified to "every n seconds"
 
-### This vs Existing
-
-This code looks like
-
-![ks1 catch game](docs/images/ks1-catch-game.png)
-
-Existing tutorial code looked like
-
-![original catch game](docs/images/original-catch-game.png)
