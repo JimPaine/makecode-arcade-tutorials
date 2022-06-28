@@ -215,11 +215,17 @@ Now lets add some sound effects when our player catches an item.
 
 Click on ``||music:Music||``
 
-And move ``||music:play melody () at tempo 120 (bpm)||`` into ``||events:when player catches Nice item||``
+And move ``||music:play sound||`` into ``||events:when player catches Nice item||``
 
-Try making your own melody to make a happy sound.
+Pick a sound that sounds happy!
 
-No do the same for when you catch a bad item.
+Now do the same for when you catch a bad item.
+
+```blocks
+music.playSound(melody) {
+
+}
+```
 
 ## Congratulations
 
