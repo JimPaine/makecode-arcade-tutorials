@@ -1,6 +1,6 @@
 {
-    "name": "KS1 Tutorials",
-    "version": "0.0.2",
+    "name": "KS1 MakeCode Arcades Tutorials",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "device": "*"
