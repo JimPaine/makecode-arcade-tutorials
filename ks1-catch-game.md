@@ -122,6 +122,12 @@ What happens if you change the number of seconds?
 
 Could this help make it harder or easier? Or even impossible!
 
+```blocks
+events.everyNSeconds(5, function () {
+    characters.createMovingItem(img``, MovingItemType.Nice)
+})
+```
+
 ## Lets make it a little harder
 
 Lets add another character to our event, but this time make it bad.
@@ -195,13 +201,15 @@ Start by clicking on ``||loops:Loops||``
 
 Then drag ``||loops:forever||``
 
-What might this do?
-
 Now click on ``||music:Music||``
 
 And move ``||music:play melody () at tempo 120 (bpm)||`` into the new loop
 
-Try changing the values and see what happens?
+**Discussion**
+
+What might a forever loop do?
+
+Try changing the values on the melody what is happening?
 
 ```blocks
 forever(function () {
