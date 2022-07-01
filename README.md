@@ -2,10 +2,13 @@
 
 A collection of tutorials built on MakeCode Arcade.
 
-[KS1 - Catch Game](https://arcade.makecode.com/#tutorial:https://github.com/jimpaine/makecode-arcade-tutorials/ks1-catch-game)
+## 0 - Catch
 
+[Tutorial](https://arcade.makecode.com/#tutorial:https://github.com/jimpaine/makecode-arcade-tutorials/ks1-catch-game)
 
-## KS1 - Catch Game
+[Demo](https://makecode.com/_40xTJtA1rV5o)
+
+### Description
 
 A simple game which allows the developer to create a game where a player can move around the screen using the controls. The player has the objective to catch items which are "nice" in return for a point and when they catch a "bad" item the player loses a live.
 
