@@ -66,9 +66,13 @@ Click on the grey box
 
 Then click **Gallery** again and change the picture if you want to.
 
+Filling like a challenge? Try the animated version!
+
 ```blocks
 scene.setBackgroundImage(img``)
 characters.createPlayer(img``)
+
+characters.createdAnimatedPlayer(img``, [img``], [img``])
 ```
 ## Controlling our player
 
@@ -140,12 +144,21 @@ What might happen when we catch this item?
 
 Remember to check the hints if you are unsure about your code.
 
+Feeling like a challenge? Try the animated version!
+
 ```blocks
 events.everyNSeconds(5, function () {
     characters.createMovingItem(img``, MovingItemType.Nice)
     characters.createMovingItem(img``, MovingItemType.Bad)
 })
+
+events.everyNSeconds(5, function () {
+    characters.createAnimatedMovingItem(img``, MovingItemType.Nice, [img``], [img``])
+    characters.createAnimatedMovingItem(img``, MovingItemType.Bad, [img``], [img``])
+})
 ```
+
+
 
 ## Scoring points
 

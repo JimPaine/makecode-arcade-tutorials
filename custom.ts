@@ -35,6 +35,39 @@ namespace events {
 
 //% color=#FF4D88 icon="\uf443" block="Characters"
 namespace characters {
+    //% block="create $image | which is $type | moving left: $left | moving right: $right"
+    //% image.shadow="screen_image_picker"
+    //% type.shadow="MovingItemType.Nice"
+    //% left.shadow="animation_editor"
+    //% right.shadow="animation_editor"
+    export function createAnimatedMovingItem(image = img``, type: MovingItemType, left = [img``], right = [img``]) {
+        let kind = SpriteKind.Food
+
+        if (type == MovingItemType.Bad) {
+            kind = SpriteKind.Enemy
+        }
+
+        let x = randint(-50, 50)
+        let sprite = sprites.createProjectileFromSide(image,x,randint(-50, 50))
+        sprite.setKind(kind)
+
+        if (x < 0) {
+            animation.runImageAnimation(
+                sprite,
+                left,
+                200,
+                true
+            )
+        } else {
+            animation.runImageAnimation(
+                sprite,
+                right,
+                200,
+                true
+            )
+        }
+    }
+
     //% block="create $image | which is $type"
     //% image.shadow="screen_image_picker"
     //% type.shadow="MovingItemType.Nice"
@@ -52,6 +85,40 @@ namespace characters {
     export function createPlayer(image = img``) {
         player = sprites.create(image, SpriteKind.Player);
         player.setStayInScreen(true);
+    }
+
+    //% block="Create animated player $image | moving left: $left | moving right: $right"
+    //% image.shadow="screen_image_picker"
+    //% left.shadow="animation_editor"
+    //% right.shadow="animation_editor"
+    export function createAnimatedPlayer(image = img``, left = [img``], right = [img``]) {
+        player = sprites.create(image, SpriteKind.Player);
+        player.setStayInScreen(true);
+        controller.player1.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pressed, function() {
+            animation.runImageAnimation(
+                player,
+                left,
+                200,
+                true
+            )
+        });
+
+        controller.player1.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Pressed, function() {
+            animation.runImageAnimation(
+                player,
+                right,
+                200,
+                true
+            )
+        });
+
+        controller.player1.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Released, function () {
+            animation.stopAnimation(animation.AnimationTypes.All, player)
+        })
+
+        controller.player1.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Released, function () {
+            animation.stopAnimation(animation.AnimationTypes.All, player)
+        })
     }
 }
 
