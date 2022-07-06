@@ -72,7 +72,7 @@ Filling like a challenge? Try the animated version!
 scene.setBackgroundImage(img``)
 characters.createPlayer(img``)
 
-characters.createdAnimatedPlayer(img``, [img``], [img``])
+characters.createAnimatedPlayer(img``, [img``], [img``])
 ```
 ## Controlling our player
 
