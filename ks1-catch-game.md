@@ -1,16 +1,14 @@
-# Gaming Making for KS1
+# MakeCode Arcade - Catch Game (6 - 8 year olds)
 
-## Game making with Microsoft MakeCode @showdialog
+## MakeCode Arcade - Catch Game (6 - 8 year olds) @showdialog
 
-We are going to be building a computer game! So lets be:
+Today we will be building a simple game to catch a **nice** item and avoid a **bad** item.
 
-- Curious
-- Confident
-- Creative
-- Caring
-- Proud of our work
+While we build our game we will learn about **events** and **handlers**
 
-So lets get coding
+So remember to ask questions and have loads of fun.
+
+Lets get coding
 
 Check the **hints** by clicking on the bulb at the bottom!
 
@@ -24,6 +22,11 @@ What are these?
 
 Talk them through with your teacher.
 
+```
+Events - Something that happens like a button press or when a player catches an item.
+Handler - The code used to handle the event i.e. move the player when the button is pressed or increase the score if the player catches an item.
+```
+
 ## On start
 
 Our first event ``||loops:On Start||`` which happens when our game starts.
@@ -32,13 +35,13 @@ Our first event ``||loops:On Start||`` which happens when our game starts.
 
 What might we want to do when the game starts?
 
-## The first thing to handle!
-
-Setting up our game.
+```
+Setup the game!
 
 - Creating our level
 - Adding a player
 - Adding controls
+```
 
 ## Adding a background
 
@@ -66,13 +69,11 @@ Click on the grey box
 
 Then click **Gallery** again and change the picture if you want to.
 
-Filling like a challenge? Try the animated version!
+Filling like a challenge? Try the animated version by clicking the ➕
 
 ```blocks
 scene.setBackgroundImage(img``)
 characters.createPlayer(img``)
-
-characters.createAnimatedPlayer(img``, [img``], [img``])
 ```
 ## Controlling our player
 
@@ -97,6 +98,12 @@ Click on the game console icon on the top left and try your game out!
 Is this fun?
 
 What else does it need?
+
+```
+Nothing to catch?
+A game needs an objective
+Something to do
+```
 
 ## Now lets add some game play.
 
@@ -144,21 +151,14 @@ What might happen when we catch this item?
 
 Remember to check the hints if you are unsure about your code.
 
-Feeling like a challenge? Try the animated version!
+Filling like a challenge? Try the animated version by clicking the ➕
 
 ```blocks
 events.everyNSeconds(5, function () {
     characters.createMovingItem(img``, MovingItemType.Nice)
     characters.createMovingItem(img``, MovingItemType.Bad)
 })
-
-events.everyNSeconds(5, function () {
-    characters.createAnimatedMovingItem(img``, MovingItemType.Nice, [img``], [img``])
-    characters.createAnimatedMovingItem(img``, MovingItemType.Bad, [img``], [img``])
-})
 ```
-
-
 
 ## Scoring points
 
