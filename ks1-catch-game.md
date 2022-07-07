@@ -73,6 +73,7 @@ Filling like a challenge? Try the animated version by clicking the ➕
 
 ```blocks
 scene.setBackgroundImage(img``)
+// @highlight
 characters.createPlayer(img``)
 ```
 ## Controlling our player
@@ -86,6 +87,7 @@ Then select ``||controller: move player with controls||``
 ```blocks
 scene.setBackgroundImage(img``)
 characters.createPlayer(img``)
+// @highlight
 controller.movePlayer()
 ```
 
@@ -135,6 +137,7 @@ Could this help make it harder or easier? Or even impossible!
 
 ```blocks
 events.everyNSeconds(5, function () {
+    // @highlight
     characters.createMovingItem(img``, MovingItemType.Nice)
 })
 ```
@@ -156,6 +159,7 @@ Filling like a challenge? Try the animated version by clicking the ➕
 ```blocks
 events.everyNSeconds(5, function () {
     characters.createMovingItem(img``, MovingItemType.Nice)
+    // @highlight
     characters.createMovingItem(img``, MovingItemType.Bad)
 })
 ```
@@ -190,6 +194,7 @@ Then drag ``||info:change score by 1||`` into our new handler
 
 ```blocks
 events.whenPlayerCatchesItem(MovingItemType.Nice, function () {
+    // @highlight
 	info.changeScoreBy(1)
 })
 ```
