@@ -2,10 +2,6 @@
 
 * name: MakeCode for kids (6-8 year olds)
 * description: Get started coding with ease using our simplified blocks and tutorials.
-* primarycolor: #2EA9B0
-* secondarycolor: #F392BD
-* tertiarycolor: #83C252
-* highlightcolor: #FAED28
 
 ## catch
 
