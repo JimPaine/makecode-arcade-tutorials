@@ -8,7 +8,13 @@
     },
     "files": [
         "custom.ts",
-        "ks1-catch-game.md"
+        "ks1-catch-game.md",
+        "skillmap.md",
+        "tutorials/catch/activity0.md",
+        "tutorials/catch/activity1.md",
+        "tutorials/catch/activity2.md",
+        "tutorials/catch/activity3.md",
+        "tutorials/catch/activity4.md"
     ],
     "testFiles": [],
     "supportedTargets": [
