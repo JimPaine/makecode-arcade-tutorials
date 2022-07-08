@@ -2,6 +2,7 @@
     "name": "KS1 MakeCode Arcades Tutorials",
     "version": "1.2.1",
     "description": "",
+    "license": "MIT",
     "dependencies": {
         "device": "*"
     },
@@ -9,11 +10,9 @@
         "custom.ts",
         "ks1-catch-game.md"
     ],
-    "testFiles": [
-    ],
+    "testFiles": [],
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj",
-    "license": "MIT"
+    "preferredEditor": "blocksprj"
 }

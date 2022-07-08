@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "pxt-arcade": "^1.8.27"
+    "pxt-arcade": "^1.10.5"
   }
 }
