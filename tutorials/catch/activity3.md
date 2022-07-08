@@ -1,3 +1,5 @@
+# MakeCode Arcade - Catch Game (6 - 8 year olds)
+
 ## Scoring points
 
 Time for another **event**!
