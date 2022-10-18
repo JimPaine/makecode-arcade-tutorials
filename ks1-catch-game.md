@@ -248,9 +248,11 @@ Pick a sound that sounds happy!
 Now do the same for when you catch a bad item.
 
 ```blocks
-music.playSound(melody) {
-
-}
+events.whenPlayerCatchesItem(MovingItemType.Nice, function () {
+    info.changeScoreBy(1)
+    // @highlight
+    music.playSound(melody)
+})
 ```
 
 ## Congratulations
