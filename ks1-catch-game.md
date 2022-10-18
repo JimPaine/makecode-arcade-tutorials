@@ -93,7 +93,7 @@ controller.movePlayer()
 
 ## Lets play!
 
-Click on the game console icon on the top left and try your game out!
+Click on the game console icon on the bottom right and try your game out!
 
 **Discussion**
 
